@@ -1,0 +1,24 @@
+# Core HTTP and environment
+
+python-dotenv==1.0.0
+
+# Web3 and blockchain interactions
+setuptools>=65.0.0,<68
+web3==6.8.0
+
+# WebSocket support
+websocket-client==1.6.4
+
+# Date/time utilities
+python-dateutil>=2.8.2
+black==24.4.2
+eth-account===0.13.0
+eth-utils==5.3.1
+eth_abi==5.2.0
+pytest==8.2.2
+
+requests==2.32.3
+responses==0.25.8
+poly_eip712_structs==0.0.1
+py-builder-signing-sdk==0.0.2
+py-builder-relayer-client
